@@ -1,0 +1,15 @@
+<h4>Available notes</h4>
+
+<ul class="notes-list">
+    <li ng-repeat="note in notes">
+        <p class="noteSummary">{{ note.notesSummary }}</p>
+        <p class="noteDate"><i>{{ note.noteDate }}</i></p>
+    </li>
+   
+</ul>
+<md-button style="float:right" ng-click="viewNotes()">
+    Refresh Note list
+</md-button>
+<md-button style="float:right" ng-click="newNoteView()">
+    New Note
+</md-button>

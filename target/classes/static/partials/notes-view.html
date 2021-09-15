@@ -1,0 +1,14 @@
+<div class="notes-view">
+    <section class="notes-panel">
+        <div ng-include="'partials/list-notes.html'"></div>
+    </section>
+    <section class="note-panel">
+        <div ng-if="isEditCreateView" ng-include="'partials/create-edit-note.html'"></div>
+        <div ng-if="!isEditCreateView">
+            No note selected
+        </div>
+    </section>
+     <section class="notes-panel">
+    	<div ng-if="viewNoteAdded" ng-include="'partials/note-created.html'"></div>
+    </section>
+</div>
